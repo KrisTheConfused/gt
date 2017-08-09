@@ -1,0 +1,36 @@
+ <form>
+     <div class="main-titel">
+         <h1>Spitzenvolumenstrom Berechnet nach LU und W3</h1>
+     </div>   
+     
+     <div class="main-hauptteil">
+         <h2>Hydraulische Grundlagen</h2>
+         <div class="input">
+             <input id="LUsumme" type="number"  class="input-inside"
+                    value=0 
+                    required
+                    min="0"
+                    max="2500"><br>
+                <label move="Up" class="label-inside">Summe LU:</label>
+                <label moven="Down" class="label-error">Zwischen 1 und 2500 LUs möglich</label>
+         </div>
+         <div class="input">
+             <input id="LUgroesster" type="number"  class="input-inside" 
+                    value=3 
+                    required
+                    min="0"
+                    max="5"><br>
+             <label move="Up" class="label-inside">Grösster LU:</label>
+             <label move="Down" class="label-error">0,1,2,3 oder 5 LU mögilch:</label>
+         </div>
+                
+         <div class="input">
+             <label id="ergebnis">ergebnis</label>
+         </div>
+         
+         <div class="input">
+             <button type="button" class="btn-simple ripple" id="ausgabe" onclick="writeSpitzenvolumenstrom()">Rechne</button>
+         </div>
+     </div>
+     
+</form>

@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+
+<html>
+
+    <head>
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="css/styles.css" rel="stylesheet">
+        <script src="https://code.jquery.com/jquery-latest.js"></script>
+        <script src="js/nav/nav.js"></script>
+        <script src="js/form/spitzenvolumenstrom.js"></script>
+        <script src="js/w3.js"></script>
+        <title>Slider Menü</title>
+    </head>
+
+    <body>
+      <!-- Unsichtbare Checkbox -->
+      <div class = "icon">
+        <label  for="toggle-hamburger" class ="symbol-hamburger">
+        </label>
+      </div>
+
+        <!--  Naviagtion Oben -->
+        <header  id ="menu-top" class="shdw-3">
+
+
+
+            <nav class ="title-btn">
+              <a href ="#" class = "btn" link="inc/main/home.inc.html">
+                Home
+              </a>
+              <a href ="#" class = "btn" link="inc/main/spitzenvolumenstromNachW3.inc.html">
+                Spitzenvolumenstrom nach W3
+              </a>
+              <a href ="#" class = "btn" link="inc/main/projekte.inc.html">
+              Projektübersicht
+              </a>
+              <a href ="#" class = "btn"link="inc/main/home.inc.html">
+              Menü Punkt 1
+              </a>
+              <a href ="#" class = "btn" link="inc/main/home.inc.html">
+              Menü Punkt 1
+              </a>
+              <a href ="#" class = "btn" link="inc/main/home.inc.html">
+              Menü Punkt 1
+              </a>
+            </nav>
+
+        </header>
+
+        <!--  Naviagtion Links-->
+          <div id="menu-ham">
+              <input type="checkbox" id="toggle-hamburger"  name="hamburger_open" value="geöffnet" class="toggle-hamburger">
+
+              <nav id ="menu-slide">
+
+                <div class="benutzer">
+
+                  Gast <img src="img/benutzer.png" class="benutzer-bild-rund " class="benutzer">
+                </div>
+
+                <ul>
+                  <a href ="#" class = "btn" link="inc/main/home.inc.html">
+                      Home
+                  </a>
+                  <a href ="#" class = "btn" link="inc/main/spitzenvolumenstromNachW3.inc.html">
+                      W3
+                  </a>
+                  <a href ="#" class = "btn" link="inc/main/projekte.inc.html">
+                      Projektübersicht
+                  </a>
+                  <a href ="#" class = "btn" link="inc/main/home.inc.html">
+                      Links Punkt 1
+                  </a>
+                  <a href ="#" class = "btn" link="inc/main/home.inc.html">
+                      Links Punkt 2
+                  </a>
+                  <a href ="#" class = "btn" link="inc/main/home.inc.html">
+                      Links Punkt 3
+                  </a>
+                  <a href ="#" class = "btn" link="inc/main/home.inc.html">
+                      Links Punkt 4
+                  </a>
+                  <a href ="#" class = "btn" link="inc/main/home.inc.html">
+                      Links Punkt 5
+                  </a>
+                </ul>
+
+              </nav>
+          </div>
+
+        </div>
+
+        <!-- Hauptteil - Dynamischen Seitenbereich Laden -->
+        <div id = "main" class="shdw-2">
+          <script>
+            $("#main").load("inc/main/home.inc.html");
+          </script>
+        </div>
+
+    </body>
+</html>

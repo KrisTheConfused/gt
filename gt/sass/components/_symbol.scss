@@ -1,0 +1,41 @@
+// --- VARIABELN ---
+// --- Farbe des Icons
+// --- --- Hamburger Menü
+$color-hamburger: $color-050;
+
+// --- STYLE ---
+.symbol-hamburger {
+    position: relative;
+    display: inline-block;
+    width: 1.25em;
+    height: 0.8em;
+    margin-right: 0.3em;
+    border-top: 0.2em solid $color-hamburger;
+    border-bottom: 0.2em solid $color-hamburger;
+    cursor: pointer;
+}
+
+.symbol-hamburger:before {
+    content: "";
+    position: absolute;
+    top: 0.3em;
+    left: 0px;
+    width: 100%;
+    border-top: 0.2em solid $color-hamburger;
+}
+
+.icon{
+    z-index: 200;
+    position:fixed;
+    margin:25px;
+}
+
+#toggle-hamburger{
+    display: none;
+    &:checked {
+        width: 50px;
+        + #menu-slide{
+            left:0px;
+        }
+    }
+}

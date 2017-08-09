@@ -1,0 +1,426 @@
+@charset "UTF-8";
+/* Schatten -> abhängig von der Tiefe */
+/* line 8, ../sass/components/var/_shdw.scss */
+.shdw-1, .btn-simple {
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.12), 0 1px 2px rgba(0, 0, 0, 0.24);
+  transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+  /*&:hover{
+box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+  }*/
+}
+
+/* line 17, ../sass/components/var/_shdw.scss */
+.shdw-2, .btn-simple:hover {
+  box-shadow: 0 3px 6px rgba(0, 0, 0, 0.16), 0 3px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 21, ../sass/components/var/_shdw.scss */
+.shdw-3 {
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+
+/* line 25, ../sass/components/var/_shdw.scss */
+.shdw-4 {
+  box-shadow: 0 14px 28px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.22);
+}
+
+/* line 29, ../sass/components/var/_shdw.scss */
+.shdw-5 {
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  /* line 11, ../sass/components/var/_mase.scss */
+  #main {
+    background-color: #F09A9D;
+    /* Red */
+  }
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  /* line 18, ../sass/components/var/_mase.scss */
+  #main {
+    background-color: #F5CF8E;
+    /* Yellow */
+  }
+}
+/* Desktop Styles */
+@media only screen and (min-width: 961px) and (max-width: 4961px) {
+  /* line 25, ../sass/components/var/_mase.scss */
+  #main {
+    background-color: #B2D6FF;
+    /* Blue */
+  }
+}
+/* MATERIAL DESIGN COLORS - https://material.io/guidelines/style/color.html#color-color-palette */
+/*Red*/
+/*Pink*/
+/*Purple*/
+/*Deep Purple*/
+/*Indigo*/
+/*Blue*/
+/*Light Blue*/
+/*Cyan*/
+/*Teal*/
+/*Green*/
+/*Light Green*/
+/*Lime*/
+/*Yellow*/
+/*Amber*/
+/*Orange*/
+/*Deep Orange*/
+/*Brown*/
+/*Grey*/
+/*Blue Grey*/
+/*Main Farbe*/
+/*Fehler*/
+/* Texte */
+/* line 1, ../sass/components/_grundlagen.scss */
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+  font-family: "Arial",  sans-serif;
+  font-size: 18px;
+  color: #004D40;
+}
+
+/* line 15, ../sass/components/_grundlagen.scss */
+a {
+  display: inline-block;
+}
+
+/* line 19, ../sass/components/_grundlagen.scss */
+h1 {
+  font-size: 30px;
+}
+
+/* line 23, ../sass/components/_grundlagen.scss */
+body {
+  background: #E0F2F1;
+}
+
+/* line 1, ../sass/components/_formen.scss */
+.benutzer-bild-rund {
+  border-radius: 100%;
+  -webkit-border-radius: 100%;
+  -moz-border-radius: 100%;
+  height: 50px;
+  padding: 15px;
+}
+
+/* line 9, ../sass/components/_formen.scss */
+.benutzer {
+  display: flex;
+  justify-content: space-between;
+  padding-left: 15px;
+  height: 120px;
+  color: #E0F2F1;
+  opacity: 1;
+}
+
+/* Menü */
+/* line 2, ../sass/components/_menu.scss */
+#menu-top {
+  /* Positionierung */
+  z-index: 0;
+  /* Grösse */
+  width: 100%;
+  height: 200px;
+  /* Aussehen */
+  background-color: #004D40;
+  /*background-image: url(https://upload.wikimedia.org/wikipedia/commons/thumb/c/cd/Stilles-Wasser.JPG/1280px-Stilles-Wasser.JPG);*/
+  /* Menü -> Title */
+  /* Menü -> Icon*/
+  /* Menü Button */
+}
+/* line 15, ../sass/components/_menu.scss */
+#menu-top .title {
+  background-color: #009688;
+  text-align: left;
+  height: 200px;
+}
+/* line 22, ../sass/components/_menu.scss */
+#menu-top .icon {
+  height: 50px;
+  width: 20px;
+  margin: 30px;
+  position: fixed;
+  top: 0px;
+}
+/* line 31, ../sass/components/_menu.scss */
+#menu-top .btn {
+  color: #E0F2F1;
+  text-align: center;
+  line-height: 50px;
+  padding-left: 15px;
+  padding-right: 15px;
+  cursor: pointer;
+}
+/* line 38, ../sass/components/_menu.scss */
+#menu-top .btn:hover {
+  background-color: #4DB6AC;
+}
+/* line 40, ../sass/components/_menu.scss */
+#menu-top .btn:hover div {
+  color: #004D40;
+}
+/* line 46, ../sass/components/_menu.scss */
+#menu-top .title-btn {
+  display: flex;
+  white-space: nowrap;
+  justify-content: space-between;
+  width: 70%;
+  position: fixed;
+  top: 15px;
+  left: 260px;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  /* line 59, ../sass/components/_menu.scss */
+  #menu-slide {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    background-color: #B2DFDB;
+  }
+
+  /* line 63, ../sass/components/_menu.scss */
+  .benutzer {
+    background-color: #004D40;
+  }
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  /* line 70, ../sass/components/_menu.scss */
+  #menu-slide {
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.3), 0 15px 12px rgba(0, 0, 0, 0.22);
+    background-color: #B2DFDB;
+  }
+
+  /* line 74, ../sass/components/_menu.scss */
+  .benutzer {
+    background-color: #004D40;
+  }
+}
+/* line 82, ../sass/components/_menu.scss */
+#menu-slide {
+  /* Positionierung -> an Linke Seite fixieren */
+  position: fixed;
+  margin-top: -120px;
+  top: 200px;
+  left: -240px;
+  z-index: 10;
+  /* Grösse -> Gesmate Höhe und eine gewisse Breite */
+  width: 240px;
+  height: 100%;
+  /* Aussehen -> Farbe und Transparenz */
+  /* Verhalten -> ??? */
+  transition: 0.5s;
+  /* Menü Button */
+}
+/* line 100, ../sass/components/_menu.scss */
+#menu-slide .btn {
+  text-align: left;
+  line-height: 50px;
+  padding-left: 15px;
+  color: black;
+  width: 93%;
+}
+/* line 106, ../sass/components/_menu.scss */
+#menu-slide .btn:hover {
+  background-color: #80CBC4;
+}
+
+/* line 7, ../sass/components/_symbol.scss */
+.symbol-hamburger {
+  position: relative;
+  display: inline-block;
+  width: 1.25em;
+  height: 0.8em;
+  margin-right: 0.3em;
+  border-top: 0.2em solid #E0F2F1;
+  border-bottom: 0.2em solid #E0F2F1;
+  cursor: pointer;
+}
+
+/* line 18, ../sass/components/_symbol.scss */
+.symbol-hamburger:before {
+  content: "";
+  position: absolute;
+  top: 0.3em;
+  left: 0px;
+  width: 100%;
+  border-top: 0.2em solid #E0F2F1;
+}
+
+/* line 27, ../sass/components/_symbol.scss */
+.icon {
+  z-index: 200;
+  position: fixed;
+  margin: 25px;
+}
+
+/* line 33, ../sass/components/_symbol.scss */
+#toggle-hamburger {
+  display: none;
+}
+/* line 35, ../sass/components/_symbol.scss */
+#toggle-hamburger:checked {
+  width: 50px;
+}
+/* line 37, ../sass/components/_symbol.scss */
+#toggle-hamburger:checked + #menu-slide {
+  left: 0px;
+}
+
+/* line 1, ../sass/components/_main.scss */
+#main {
+  z-index: 10;
+  margin: 0 auto;
+  margin-top: -120px;
+  width: 70%;
+  margin-left: 260px;
+  background-color: #B2DFDB;
+}
+
+/* Mobile Styles */
+@media only screen and (max-width: 400px) {
+  /* line 16, ../sass/components/_main.scss */
+  #main {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/* Tablet Styles */
+@media only screen and (min-width: 401px) and (max-width: 960px) {
+  /* line 24, ../sass/components/_main.scss */
+  #main {
+    width: 100%;
+    margin-left: 0;
+  }
+}
+/* line 30, ../sass/components/_main.scss */
+.main-titel {
+  width: 100%;
+  height: 120px;
+  margin: 0;
+  background-color: #80CBC4;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.19), 0 6px 6px rgba(0, 0, 0, 0.23);
+}
+/* line 36, ../sass/components/_main.scss */
+.main-titel h1 {
+  padding: 50px;
+  display: flex;
+  white-space: nowrap;
+}
+
+/* line 43, ../sass/components/_main.scss */
+.main-hauptteil {
+  padding: 50px;
+}
+/* line 45, ../sass/components/_main.scss */
+.main-hauptteil div {
+  padding-top: 20px;
+}
+
+/* line 1, ../sass/components/form/_div.scss */
+.input {
+  margin-top: 20px;
+  margin-bottom: 30px;
+}
+
+/* Spinner ausschalten - Für Firefox */
+/* line 2, ../sass/components/form/_input.scss */
+input[type='number'] {
+  -moz-appearance: textfield;
+}
+
+/* Spinner ausschalten - Für Webkit browsers */
+/* line 6, ../sass/components/form/_input.scss */
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Eigentliches Design startet hier */
+/* line 13, ../sass/components/form/_input.scss */
+.label-inside {
+  opacity: 0.5;
+  position: absolute;
+  margin-top: -24px;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  -webkit-transition: all 0.2s ease;
+  -moz-transition: all 0.2s ease;
+  -o-transition: all 0.2s ease;
+}
+
+/* line 24, ../sass/components/form/_input.scss */
+.label-error {
+  display: none;
+  font-size: 12px;
+  color: red;
+}
+
+/* line 30, ../sass/components/form/_input.scss */
+.input-inside {
+  border: none;
+  border-bottom: 2px solid #4DB6AC;
+  width: 80%;
+  outline: 0;
+  background: #B2DFDB;
+  /* Validierung START */
+  /* Validierung ENDE */
+}
+/* line 41, ../sass/components/form/_input.scss */
+.input-inside:focus ~ label[move="Up"], .input-inside:valid ~ label[move="Up"] {
+  margin-top: -44px;
+  font-size: 12px;
+}
+/* line 49, ../sass/components/form/_input.scss */
+.input-inside:invalid ~ label[move="Down"], .input-inside:out-of-range ~ label[move="Down"] {
+  margin-top: 0px;
+  display: block;
+}
+/* line 53, ../sass/components/form/_input.scss */
+.input-inside:invalid ~ label[move="Up"], .input-inside:out-of-range ~ label[move="Up"] {
+  margin-top: -44px;
+  font-size: 12px;
+}
+
+/* line 3, ../sass/components/form/_button.scss */
+.btn-simple {
+  background-color: #80CBC4;
+  border: none;
+  padding: 15px 30px;
+  cursor: pointer;
+  /* Ripple Effekt START */
+  position: relative;
+  overflow: hidden;
+  /* Ripple Effekt ENDE */
+}
+/* line 18, ../sass/components/form/_button.scss */
+.btn-simple:after {
+  content: "";
+  background: #B2DFDB;
+  display: block;
+  position: absolute;
+  border-radius: 50%;
+  padding-top: 240%;
+  padding-left: 240%;
+  margin-top: -120%;
+  margin-left: -120%;
+  opacity: 0;
+  transition: all 1s;
+}
+/* line 32, ../sass/components/form/_button.scss */
+.btn-simple:active:after {
+  padding-top: 0;
+  padding-left: 0;
+  margin-top: 0;
+  margin-left: 0;
+  opacity: 1;
+  transition: 0s;
+}

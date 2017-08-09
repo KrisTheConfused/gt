@@ -1,0 +1,17 @@
+.benutzer-bild-rund {
+border-radius: 100%;
+-webkit-border-radius: 100%;
+-moz-border-radius: 100%;
+height: 50px;
+padding:15px;
+}
+
+.benutzer{
+  display: flex;
+  justify-content:  space-between;
+  padding-left: 15px;
+  height: $height-main-top;
+  color:$text-farbe-hell;
+  opacity:1;
+
+}

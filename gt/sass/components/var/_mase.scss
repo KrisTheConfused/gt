@@ -1,0 +1,35 @@
+// Gerätemasse
+$width-min-smartphone: 1px;
+$width-max-smartphone: 400px;
+$width-min-tablet: 401px;
+$width-max-tablet: 960px;
+$width-min-desktop: 961px;
+$width-max-desktop: 4961px;
+
+/* Mobile Styles */
+@media only screen and (max-width: $width-max-smartphone) {
+  #main {
+    background-color: #F09A9D; /* Red */
+  }
+}
+
+/* Tablet Styles */
+@media only screen and (min-width: $width-min-tablet) and (max-width: $width-max-tablet) {
+  #main {
+    background-color: #F5CF8E; /* Yellow */
+  }
+}
+
+/* Desktop Styles */
+@media only screen and (min-width: $width-min-desktop) and (max-width: $width-max-desktop) {
+  #main {
+    background-color: #B2D6FF; /* Blue */
+  }
+}
+
+// Masse Menü Top
+$height-top: 200px;
+$height-main-top: 120px;
+
+// Masse Menü Slide
+$width-slide: 240px;
